@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Kana Natsuno <dev@whileimautomaton.net>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
     "ts-loader": "^2.3.4",
     "typescript": "^2.4.2",
