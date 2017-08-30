@@ -15,5 +15,15 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
+  },
+  resolve: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, './src')
+    ],
+    extensions: [
+      '.js',
+      '.ts'
+    ]
   }
 }
