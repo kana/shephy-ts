@@ -4,8 +4,5 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "strict": true
-  },
-  "include": [
-    "./src/**/*"
-  ]
+  }
 }
