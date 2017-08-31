@@ -5,6 +5,8 @@ const vue = new Vue({
   components: {
     Root
   },
-  template: '<Root/>'
+  render (createElement) {
+    return createElement('Root')
+  }
 })
 vue.$mount(document.getElementById('app')!)

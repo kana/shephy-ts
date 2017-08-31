@@ -54,10 +54,7 @@ module.exports = {
       '.js',
       '.ts',
       '.vue'
-    ],
-    alias: {
-      vue: 'vue/dist/vue.js'
-    }
+    ]
   },
   devServer: {
     contentBase: './dist',
