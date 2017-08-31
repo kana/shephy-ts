@@ -8,19 +8,19 @@
 <script>
 import Vue from 'vue'
 
-interface Component extends Vue {
+interface IComponent extends Vue {
   count: number
   bump (): void
 }
 
-const component: Vue.ComponentOptions<Component> = {
-  data: function () {
+const component: Vue.ComponentOptions<IComponent> = {
+  data () {
     return {
       count: 0
     }
   },
   methods: {
-    bump: function () {
+    bump () {
       this.count++
     }
   }
