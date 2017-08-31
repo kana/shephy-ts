@@ -20,6 +20,15 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            js: 'ts-loader'
+          }
+        }
       }
     ]
   },
@@ -30,7 +39,8 @@ module.exports = {
     ],
     extensions: [
       '.js',
-      '.ts'
+      '.ts',
+      '.vue'
     ],
     alias: {
       vue: 'vue/dist/vue.js'
