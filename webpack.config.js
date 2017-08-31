@@ -18,6 +18,14 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.ts$/,
+        loader: 'tslint-loader',
+        options: {
+          configFile: 'tslint.json'
+        }
+      },
+      {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
