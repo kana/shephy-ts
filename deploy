@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -ex
+
+git diff --quiet HEAD
+version="$(git describe --always --dirty)"
+
+rm -rf dist
+yarn run build
+
+for i in dist/*
+do
+  t="${i#dist/}"
+  cp "$i" "$t"
+  git add "$t"
+done
+git commit -m "Build $version"
+git push github HEAD:gh-pages -f
+
+git reset --hard HEAD~
