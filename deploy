@@ -6,7 +6,7 @@ git diff --quiet HEAD
 version="$(git describe --always --dirty)"
 
 rm -rf dist
-yarn run build
+yarn run build:production
 
 for i in dist/*
 do
