@@ -5,7 +5,8 @@
   "author": "Kana Natsuno <dev@whileimautomaton.net>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
   },
   "devDependencies": {
     "ts-loader": "^2.3.4",
