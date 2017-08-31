@@ -1,18 +1,10 @@
-import Vue, { ComponentOptions } from 'vue'
-
-interface VueApp extends Vue {
-  count: number
-}
+import Root from './Root'
+import Vue from 'vue'
 
 new Vue({
   el: '#app',
-  template: '#app-template',
-  data: {
-    count: 0
-  },
-  methods: {
-    bump: function () {
-      this.count++
-    }
+  template: '<Root/>',
+  components: {
+    Root
   }
-} as ComponentOptions<VueApp>)
+})
