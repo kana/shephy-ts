@@ -6,7 +6,14 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue'
+
+interface Component extends Vue {
+  count: number
+  bump (): void
+}
+
+const component: Vue.ComponentOptions<Component> = {
   data: function () {
     return {
       count: 0
@@ -14,10 +21,11 @@ export default {
   },
   methods: {
     bump: function () {
-      // TODO: (17,12): error TS2339: Property 'count' does not exist on type '{ bump: () => void; }'.
       this.count++
     }
   }
 }
+
+export default component
 </script>
 vim: filetype=html
