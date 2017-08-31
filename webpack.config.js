@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.ts',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      hash: true
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
