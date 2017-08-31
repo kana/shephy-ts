@@ -1,12 +1,14 @@
-const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/index.ts',
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -35,6 +37,7 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true
   }
 }
