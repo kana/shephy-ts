@@ -23,7 +23,8 @@ module.exports = {
         test: /\.ts$/,
         loader: 'tslint-loader',
         options: {
-          configFile: 'tslint.json'
+          configFile: 'tslint.json',
+          typeCheck: true
         }
       },
       {
