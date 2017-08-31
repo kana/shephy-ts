@@ -14,6 +14,7 @@ export default {
   },
   methods: {
     bump: function () {
+      // TODO: (17,12): error TS2339: Property 'count' does not exist on type '{ bump: () => void; }'.
       this.count++
     }
   }
