@@ -5,6 +5,12 @@
   </div>
 </template>
 
+<style>
+  body {
+    background-color: #eee;
+  }
+</style>
+
 <script>
 import Vue from 'vue'
 
