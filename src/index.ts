@@ -1,12 +1,12 @@
-import Root from 'Root'
+import Counter from 'components/counter'
 import Vue from 'vue'
 
 const vue = new Vue({
   components: {
-    Root
+    Counter
   },
   render (createElement) {
-    return createElement('Root')
+    return createElement('Counter')
   }
 })
 vue.$mount(document.getElementById('app')!)
