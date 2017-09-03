@@ -35,13 +35,13 @@ module.exports = {
         }
       },
       {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            js: 'ts-loader!tslint-loader'
-          }
-        }
+        test: /components\/.*\.html$/,
+        loader: 'vue-template-loader'
+      },
+      {
+        enforce: 'post',
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader?modules']
       }
     ]
   },
@@ -52,8 +52,7 @@ module.exports = {
     ],
     extensions: [
       '.js',
-      '.ts',
-      '.vue'
+      '.ts'
     ]
   },
   devServer: {
