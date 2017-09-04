@@ -1,12 +1,12 @@
-import Counter from 'components/counter'
+import Board from 'components/board'
 import Vue from 'vue'
 
 const vue = new Vue({
   components: {
-    Counter
+    Board
   },
   render (createElement) {
-    return createElement('Counter')
+    return createElement('Board')
   }
 })
 vue.$mount(document.getElementById('app')!)

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import template from './counter.html?style=./counter.css'
+import template from './board.html?style=./board.css'
 
 interface IComponent extends Vue {
   count: number
