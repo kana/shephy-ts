@@ -18,6 +18,7 @@
     "tslint-config-standard": "^6.0.1",
     "tslint-loader": "^3.5.3",
     "typescript": "^2.4.2",
+    "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.4.2",
     "vue-template-loader": "^0.3.1",
     "webpack": "^3.5.5",
