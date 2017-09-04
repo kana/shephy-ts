@@ -13,7 +13,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '.',
+    publicPath: '', // relative to HTML page ('.' doesn't work with HMR)
     filename: 'app.js'
   },
   module: {
