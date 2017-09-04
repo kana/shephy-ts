@@ -1,4 +1,4 @@
-import Board from 'components/board'
+import Board from 'components/board.vue'
 import Vue from 'vue'
 
 const vue = new Vue({

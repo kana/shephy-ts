@@ -13,7 +13,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '.',
+    publicPath: '', // relative to HTML page ('.' doesn't work with HMR)
     filename: 'app.js'
   },
   module: {
@@ -35,13 +35,15 @@ module.exports = {
         }
       },
       {
-        test: /components\/.*\.html$/,
-        loader: 'vue-template-loader'
-      },
-      {
-        enforce: 'post',
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader?modules']
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            // typeCheck should be turned on for several rules.
+            // But it's not easy to do so for *.vue.
+            js: 'ts-loader!tslint-loader?configFile=tslint.json'
+          }
+        }
       }
     ]
   },
