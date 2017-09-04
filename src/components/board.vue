@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style>
+<style module>
   .container {
     background-color: #eee;
   }
