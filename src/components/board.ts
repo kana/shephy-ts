@@ -2,19 +2,13 @@ import Vue from 'vue'
 import template from './board.html?style=./board.css'
 
 interface IComponent extends Vue {
-  count: number
-  bump (): void
+  field: number[]
 }
 
 const component: Vue.ComponentOptions<IComponent> = template({
   data () {
     return {
-      count: 0
-    }
-  },
-  methods: {
-    bump () {
-      this.count++
+      field: [1, 3, 300, 10]
     }
   }
 })

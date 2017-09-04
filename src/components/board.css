@@ -1,3 +1,16 @@
 .container {
   background-color: #eee;
 }
+
+.sheep {
+  display: inline-block;
+  border: 1px solid gray;
+  background: #f9f9f9;
+  color: #000;
+  width: 63px;
+  height: 88px;
+}
+
+.sheep + .sheep {
+  margin-left: 1em;
+}

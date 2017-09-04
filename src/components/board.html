@@ -1,4 +1,10 @@
 <div :class="$style.container">
-  <p>Count: {{ count }}</p>
-  <button @click="bump">Bump!</button>
+  <dl>
+    <dt>Field:</dt>
+    <dd>
+      <span v-for="sheep in field" :class="$style.sheep">
+        {{ sheep }}
+      </span>
+    </dd>
+  </dl>
 </div>
