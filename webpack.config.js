@@ -35,6 +35,15 @@ module.exports = {
         }
       },
       {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            js: 'ts-loader!tslint-loader'
+          }
+        }
+      },
+      {
         test: /components\/.*\.html$/,
         loader: 'vue-template-loader'
       },
@@ -52,7 +61,8 @@ module.exports = {
     ],
     extensions: [
       '.js',
-      '.ts'
+      '.ts',
+      '.vue'
     ]
   },
   devServer: {
