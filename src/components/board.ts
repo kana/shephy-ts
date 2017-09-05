@@ -7,7 +7,7 @@ interface IComponent extends Vue {
 const component: Vue.ComponentOptions<IComponent> = {
   data () {
     return {
-      field: [1, 3, 300, 10]
+      field: [1, 3, 300, 10, 100]
     }
   }
 }

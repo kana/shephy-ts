@@ -1,0 +1,10 @@
+<div :class="$style.container">
+  <dl>
+    <dt>Field:</dt>
+    <dd>
+      <span v-for="sheep in field" :class="$style.sheep">
+        {{ sheep }}
+      </span>
+    </dd>
+  </dl>
+</div>
