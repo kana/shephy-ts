@@ -41,7 +41,7 @@ module.exports = {
           loaders: {
             // typeCheck should be turned on for several rules.
             // But it's not easy to do so for *.vue.
-            js: 'ts-loader!tslint-loader?configFile=tslint.json'
+            js: 'ts-loader!tslint-loader?configFile=tslint.json&typeCheck=true'
           }
         }
       }
