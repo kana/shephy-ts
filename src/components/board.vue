@@ -30,9 +30,6 @@
   }
 </style>
 
-<script>
-import component from './board.ts'
-export default component
-</script>
+<script src="./board.ts"></script>
 
 vim: filetype=html
