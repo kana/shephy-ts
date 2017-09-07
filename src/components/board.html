@@ -1,5 +1,11 @@
 <div :class="$style.container">
   <dl>
+    <dt>Stocks:</dt>
+    <dd v-for="rank in Array.from(board.stocks.keys())" :class="$style.stock">
+      <span v-for="sheep in board.stocks.get(rank)" :class="$style.sheep">
+        {{ sheep.rank }}
+      </span>
+    </dd>
     <dt>Field:</dt>
     <dd>
       <span v-for="sheep in board.field" :class="$style.sheep">
