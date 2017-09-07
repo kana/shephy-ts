@@ -1,7 +1,14 @@
+import Sheep from 'game/sheep'
+
 export default class Board {
-  readonly field: number[]
+  readonly field: Sheep[]
 
   constructor () {
-    this.field = [1, 10, 3, 1000, 300]
+    this.field = [
+      new Sheep(1),
+      new Sheep(3),
+      new Sheep(1000),
+      new Sheep(30)
+    ]
   }
 }
