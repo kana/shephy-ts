@@ -1,7 +1,9 @@
-export default class Sheep {
-  readonly rank: number
+import { Rank } from 'game/rank'
 
-  constructor (rank: number) {
+export default class Sheep {
+  readonly rank: Rank
+
+  constructor (rank: Rank) {
     this.rank = rank
   }
 }
