@@ -2,15 +2,11 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
-    "lib": [
-      "dom",
-      "es5",
-      "es2015.promise"
-    ],
     "module": "es2015",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "strict": true
+    "strict": true,
+    "target": "es2015"
   }
 }
