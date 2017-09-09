@@ -16,3 +16,7 @@
 .field .sheep + .sheep {
   margin-left: 1em;
 }
+
+.stock {
+  display: inline-block;
+}
