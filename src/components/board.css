@@ -20,3 +20,7 @@
 .stock {
   display: inline-block;
 }
+
+.stock .sheep + .sheep {
+  margin-left: -53px;
+}
