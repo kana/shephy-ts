@@ -13,7 +13,8 @@
   height: 88px;
 }
 
-.field .sheep + .sheep {
+.field .sheep + .sheep,
+.stock + .stock {
   margin-left: 1em;
 }
 
