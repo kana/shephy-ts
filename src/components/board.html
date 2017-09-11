@@ -12,5 +12,11 @@
         {{ sheep.rank }}
       </span>
     </dd>
+    <dt>Hand:</dt>
+    <dd :class="$style.hand">
+      <span v-for="event in board.hand" :class="$style.card">
+        {{ event.name }}
+      </span>
+    </dd>
   </dl>
 </div>

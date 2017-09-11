@@ -1,9 +1,11 @@
+import Event from 'game/event'
 import { Rank } from 'game/rank'
 import Sheep from 'game/sheep'
 
 export default class Board {
   readonly field: Sheep[]
   readonly stocks: Map<Rank, Sheep[]>
+  readonly hand: Event[]
 
   constructor () {
     this.field = [
@@ -17,5 +19,11 @@ export default class Board {
     this.stocks.set(1, [new Sheep(1), new Sheep(1)])
     this.stocks.set(3, [new Sheep(3)])
     this.stocks.set(10, [new Sheep(10), new Sheep(10), new Sheep(10)])
+
+    this.hand = [
+      new Event('Multiply'),
+      new Event('Shephion'),
+      new Event('Meteor')
+    ]
   }
 }
