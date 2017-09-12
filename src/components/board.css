@@ -7,10 +7,17 @@
   align-items: center;
   justify-content: center;
   border: 1px solid gray;
-  background: #f9f9f9;
   color: #000;
   width: 63px;
   height: 88px;
+}
+
+.sheep.card {
+  background: #f0f9f9;
+}
+
+.event.card {
+  background: #f9f9f0;
 }
 
 .field .card + .card,
