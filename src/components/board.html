@@ -2,19 +2,19 @@
   <dl>
     <dt>Stocks:</dt>
     <dd v-for="rank in Array.from(board.stocks.keys())" :class="$style.stock">
-      <span v-for="sheep in board.stocks.get(rank)" :class="$style.sheep">
+      <span v-for="sheep in board.stocks.get(rank)" :class="[$style.sheep, $style.card]">
         {{ sheep.rank }}
       </span>
     </dd>
     <dt>Field:</dt>
     <dd :class="$style.field">
-      <span v-for="sheep in board.field" :class="$style.sheep">
+      <span v-for="sheep in board.field" :class="[$style.sheep, $style.card]">
         {{ sheep.rank }}
       </span>
     </dd>
     <dt>Hand:</dt>
     <dd :class="$style.hand">
-      <span v-for="event in board.hand" :class="$style.card">
+      <span v-for="event in board.hand" :class="[$style.event, $style.card]">
         {{ event.name }}
       </span>
     </dd>

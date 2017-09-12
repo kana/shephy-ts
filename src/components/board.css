@@ -2,7 +2,7 @@
   background-color: #eee;
 }
 
-.sheep {
+.card {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,8 @@
   height: 88px;
 }
 
-.field .sheep + .sheep,
+.field .card + .card,
+.hand .card + .card,
 .stock + .stock {
   margin-left: 1em;
 }
