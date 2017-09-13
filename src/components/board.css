@@ -1,4 +1,5 @@
-.container {
+.container dt:not(:first-child) {
+  margin-top: 1ex;
 }
 
 .card {
