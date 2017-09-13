@@ -3,13 +3,19 @@
 }
 
 .card {
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid gray;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   color: #000;
   width: 63px;
   height: 88px;
+}
+
+.sparse .card:hover {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .sheep.card {
