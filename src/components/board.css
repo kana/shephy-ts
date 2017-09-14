@@ -28,14 +28,14 @@
 
 .field .card + .card,
 .hand .card + .card,
-.stock + .stock {
+.pile + .pile {
   margin-left: 1em;
 }
 
-.stock {
+.pile {
   display: inline-block;
 }
 
-.stock .card + .card {
+.pile .card + .card {
   margin-left: -53px;
 }

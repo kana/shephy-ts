@@ -1,7 +1,7 @@
 <div :class="$style.container">
   <dl>
     <dt>Stocks:</dt>
-    <dd v-for="rank in Array.from(board.stocks.keys())" :class="$style.stock">
+    <dd v-for="rank in Array.from(board.stocks.keys())" :class="[$style.stock, $style.pile]">
       <span v-for="sheep in board.stocks.get(rank)" :class="[$style.sheep, $style.card]">
         {{ sheep.rank }}
       </span>
@@ -19,7 +19,7 @@
       </span>
     </dd>
     <dt>Library:</dt>
-    <dd :class="[$style.library, $style.stock]">
+    <dd :class="[$style.library, $style.pile]">
       <span v-for="event in board.library" :class="[$style.event, $style.card]">
         {{ event.name }}
       </span>
