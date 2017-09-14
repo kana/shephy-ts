@@ -36,6 +36,6 @@
   display: inline-block;
 }
 
-.stock .sheep + .sheep {
+.stock .card + .card {
   margin-left: -53px;
 }

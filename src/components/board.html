@@ -18,5 +18,11 @@
         {{ event.name }}
       </span>
     </dd>
+    <dt>Library:</dt>
+    <dd :class="[$style.library, $style.stock]">
+      <span v-for="event in board.library" :class="[$style.event, $style.card]">
+        {{ event.name }}
+      </span>
+    </dd>
   </dl>
 </div>

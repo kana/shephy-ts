@@ -6,6 +6,7 @@ export default class Board {
   readonly field: Sheep[]
   readonly stocks: Map<Rank, Sheep[]>
   readonly hand: Event[]
+  readonly library: Event[]
 
   constructor () {
     this.field = [
@@ -24,6 +25,12 @@ export default class Board {
       new Event('Multiply'),
       new Event('Shephion'),
       new Event('Meteor')
+    ]
+
+    this.library = [
+      new Event('Flourish'),
+      new Event('Golden Hooves'),
+      new Event('Inspiration')
     ]
   }
 }
